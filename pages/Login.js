@@ -1,19 +1,34 @@
 import React from "react";
-import { View, TouchableOpacity, Image, Text, StyleSheet } from "react-native";
+import {
+  View,
+  TouchableOpacity,
+  Image,
+  Text,
+  StyleSheet,
+  Button,
+} from "react-native";
+import { NativeRouter } from "react-router-native";
 
-const Login = () => {
+const Login = ({ navigation }) => {
   return (
-    <View style={styles.screenContainer}>
-      <TouchableOpacity style={styles.buttonContainer}>
-        <Image
-          style={styles.tinyLogo}
-          source={{
-            uri: "https://blog.hubspot.com/hs-fs/hubfs/image8-2.jpg?width=600&name=image8-2.jpg",
+    <NativeRouter>
+      <View style={styles.screenContainer}>
+        <TouchableOpacity
+          style={styles.buttonContainer}
+          onPress={() => {
+            navigation.navigate("Home");
           }}
-        />
-        <Text style={styles.buttonText}>SignIn with Google</Text>
-      </TouchableOpacity>
-    </View>
+        >
+          <Image
+            style={styles.tinyLogo}
+            source={{
+              uri: "https://blog.hubspot.com/hs-fs/hubfs/image8-2.jpg?width=600&name=image8-2.jpg",
+            }}
+          />
+          <Text style={styles.buttonText}>SignIn with Google</Text>
+        </TouchableOpacity>
+      </View>
+    </NativeRouter>
   );
 };
 
