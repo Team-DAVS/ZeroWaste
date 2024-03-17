@@ -1,12 +1,24 @@
 import React from "react";
-import { View, TouchableOpacity, Image, Text, StyleSheet } from "react-native";
+import {
+  View,
+  TouchableOpacity,
+  Image,
+  Text,
+  StyleSheet,
+  Button,
+} from "react-native";
 import { NativeRouter } from "react-router-native";
 
 const Login = ({ navigation }) => {
   return (
     <NativeRouter>
       <View style={styles.screenContainer}>
-        <TouchableOpacity style={styles.buttonContainer}>
+        <TouchableOpacity
+          style={styles.buttonContainer}
+          onPress={() => {
+            navigation.navigate("Home");
+          }}
+        >
           <Image
             style={styles.tinyLogo}
             source={{
