@@ -8,7 +8,7 @@ const FeatureIcon = ({ src }) => {
             <View style={styles.innerBorder}>
                 <View style={styles.imageContainer}>
                     <Image
-                        source={require('../../assets/home-page/icons/thunder.png')}
+                        source={require('../../assets/home-page/icons/brain.png')}
                         // source={{ uri: src }}
                         // source={image_path}
                         style={styles.image}
@@ -24,13 +24,13 @@ const styles = StyleSheet.create({
     outerBorder: {
         borderRadius: 26,
         borderWidth: 2,
-        borderColor: 'rgba(63, 189, 241, 0.4)',
+        borderColor: 'rgba(0, 0, 0, 0.4)', // rgba(63, 189, 241, 0.4)
         padding: 2,
     },
     innerBorder: {
         borderRadius: 24,
         borderWidth: 3,
-        borderColor: 'rgba(63, 189, 241, 0.6)',
+        borderColor: 'rgba(0, 0, 0, 0.6)',
         padding: 4,
     },
     imageContainer: {

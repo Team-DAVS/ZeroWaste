@@ -6,32 +6,32 @@ const sampleFeatures = [
     {
         title: 'Feature 1',
         description: 'Description for Feature 1',
-        iconSrc: '../../assets/home-page/icons/brain.svg',
+        iconSrc: '../../assets/home-page/icons/brain.png',
     },
     {
         title: 'Feature 2',
         description: 'Description for Feature 2',
-        iconSrc: '../../assets/home-page/icons/db.svg',
+        iconSrc: '../../assets/home-page/icons/dev.png',
     },
     {
         title: 'Feature 3',
         description: 'Description for Feature 3',
-        iconSrc: '../../assets/home-page/icons/dx.svg',
+        iconSrc: '../../assets/home-page/icons/idea.png',
     },
     {
         title: 'Feature 4',
         description: 'Description for Feature 4',
-        iconSrc: '../../assets/home-page/icons/options.svg',
+        iconSrc: '../../assets/home-page/icons/recycle.png',
     },
     {
         title: 'Feature 5',
         description: 'Description for Feature 5',
-        iconSrc: '../../assets/home-page/icons/terminal.svg',
+        iconSrc: '../../assets/home-page/icons/square.png',
     },
     {
         title: 'Feature 6',
         description: 'Description for Feature 6',
-        iconSrc: '../../assets/home-page/icons/time.svg',
+        iconSrc: '../../assets/home-page/icons/wallet.png',
     },
 ];
 
