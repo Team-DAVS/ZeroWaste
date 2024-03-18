@@ -58,13 +58,14 @@ const styles = StyleSheet.create({
         marginBottom: 20,
     },
     step: {
-        marginBottom: 20,
+        marginVertical: 12,
     },
     stepTitle: {
         fontSize: 18,
         fontWeight: 'bold',
         marginBottom: 5,
-        color: '#a5a5a5'
+        color: '#a5a5a5',
+        textDecorationLine: 'underline',
     },
     stepDescription: {
         fontSize: 16,
