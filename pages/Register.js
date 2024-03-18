@@ -2,7 +2,7 @@ import React from "react";
 import { View, StyleSheet, Button, TextInput } from "react-native";
 import { NativeRouter } from "react-router-native";
 
-const Login = ({ navigation }) => {
+const Register = ({ navigation }) => {
   return (
     <NativeRouter>
       <View style={styles.container}>
@@ -20,18 +20,9 @@ const Login = ({ navigation }) => {
           onPress={() => {
             navigation.navigate("Home");
           }}
-          title="Login"
-          style={styles.button}
-        ></Button>
-        {/* Add margin between buttons */}
-        <View style={{ marginBottom: 10 }}></View>
-        <Button
-          onPress={() => {
-            navigation.navigate("Register");
-          }}
           title="Sign up"
           style={styles.button}
-        ></Button>
+        />
       </View>
     </NativeRouter>
   );
@@ -63,8 +54,7 @@ const styles = StyleSheet.create({
     marginTop: 20,
     width: "35%",
     paddingVertical: 12,
-    backgroundColor: "green",
   },
 });
 
-export default Login;
+export default Register;
