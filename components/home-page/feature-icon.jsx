@@ -1,0 +1,46 @@
+import { Image, View, StyleSheet } from 'react-native';
+
+const FeatureIcon = ({ src }) => {
+    return (
+        <View style={styles.outerBorder}>
+            <View style={styles.innerBorder}>
+                <View style={styles.imageContainer}>
+                    <Image
+                        source={src}
+                        style={styles.image}
+                        resizeMode="contain"
+                    />
+                </View>
+            </View>
+        </View>
+    );
+};
+
+const styles = StyleSheet.create({
+    outerBorder: {
+        borderRadius: 26,
+        borderWidth: 2,
+        borderColor: 'rgba(0, 0, 0, 0.4)', // rgba(63, 189, 241, 0.4)
+        padding: 2,
+    },
+    innerBorder: {
+        borderRadius: 24,
+        borderWidth: 3,
+        borderColor: 'rgba(0, 0, 0, 0.6)',
+        padding: 4,
+    },
+    imageContainer: {
+        width: 50,
+        height: 50,
+        borderRadius: 20,
+        overflow: 'hidden',
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    image: {
+        width: 24,
+        height: 24,
+    },
+});
+
+export default FeatureIcon;
