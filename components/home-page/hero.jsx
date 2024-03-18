@@ -1,7 +1,10 @@
 import { StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
+// import { NativeRouter } from "react-router-native";
+import { useNavigation } from '@react-navigation/native';
 
 export default function Hero() {
-    return (
+    const navigation = useNavigation();
+    return (    
         <View style={styles.container}>
             <Image
                 source={require('../../assets/home-page/hero-illustration.png')}
@@ -16,7 +19,10 @@ export default function Hero() {
             </View>
             <Text style={styles.title}>Welcome to <Text style={styles.mainTxt}>ZeroWaste</Text> </Text>
             <Text style={styles.subtitle}>Start earning points now</Text>
-            <TouchableOpacity style={styles.button}>
+            <TouchableOpacity style={styles.button} 
+                onPress={() => {
+                navigation.navigate("Rewards");
+            }}>
                 <Text style={styles.buttonText}>Earn Rewards</Text>
             </TouchableOpacity>
         </View>
