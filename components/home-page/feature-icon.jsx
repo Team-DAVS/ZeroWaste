@@ -1,15 +1,12 @@
 import { Image, View, StyleSheet } from 'react-native';
 
 const FeatureIcon = ({ src }) => {
-    // const image_path = require(`${src}`);
     return (
         <View style={styles.outerBorder}>
             <View style={styles.innerBorder}>
                 <View style={styles.imageContainer}>
                     <Image
-                        source={require('../../assets/home-page/icons/brain.png')}
-                        // source={{ uri: src }}
-                        // source={image_path}
+                        source={src}
                         style={styles.image}
                         resizeMode="contain"
                     />

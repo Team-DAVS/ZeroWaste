@@ -1,36 +1,36 @@
 import { View, Text, ScrollView, StyleSheet } from 'react-native';
-import FeatureIcon from './feature-icon';
+import FeatureIcon from './feature-icon'
 
-const sampleFeatures = [
+const featuresData = [
     {
-        title: 'Feature 1',
-        description: 'Description for Feature 1',
-        iconSrc: '../../assets/home-page/icons/brain.png',
+        title: 'Next-Gen Algorithm',
+        description: 'The algorithm is very accurate to give you the best reward possible.',
+        iconSrc: require('../../assets/home-page/icons/brain.png'),
     },
     {
-        title: 'Feature 2',
-        description: 'Description for Feature 2',
-        iconSrc: '../../assets/home-page/icons/dev.png',
+        title: 'DX & UX',
+        description: 'The developer experience with open source codebase and user experience is prioritized for easy usage of ZeroWaste.',
+        iconSrc: require('../../assets/home-page/icons/dev.png'),
     },
     {
-        title: 'Feature 3',
-        description: 'Description for Feature 3',
-        iconSrc: '../../assets/home-page/icons/idea.png',
+        title: 'Zero cost Benefit',
+        description: 'ZeroWaste promotes the eco-friendly goals and someone can earn bunch of points without even spending anything.',
+        iconSrc: require('../../assets/home-page/icons/idea.png'),
     },
     {
-        title: 'Feature 4',
-        description: 'Description for Feature 4',
-        iconSrc: '../../assets/home-page/icons/recycle.png',
+        title: 'Recycle to Future',
+        description: 'We are disposing wastes, and promoting usage of recycled ones all at the same time.',
+        iconSrc: require('../../assets/home-page/icons/recycle.png'),
     },
     {
-        title: 'Feature 5',
-        description: 'Description for Feature 5',
-        iconSrc: '../../assets/home-page/icons/square.png',
+        title: 'Community Centered',
+        description: 'This is done by the community for the community.',
+        iconSrc: require('../../assets/home-page/icons/square.png'),
     },
     {
-        title: 'Feature 6',
-        description: 'Description for Feature 6',
-        iconSrc: '../../assets/home-page/icons/wallet.png',
+        title: 'Wallet Reward Points',
+        description: 'The company partnerships offer huge number of options for purchasing valuable items using your wallet.',
+        iconSrc: require('../../assets/home-page/icons/wallet.png'),
     },
 ];
 
@@ -38,7 +38,7 @@ const Features = () => {
     return (
         <ScrollView contentContainerStyle={styles.container}>
             <Text style={styles.title}>Features</Text>
-            {sampleFeatures.map((feature, index) => (
+            {featuresData.map((feature, index) => (
                 <View key={index} style={styles.featureContainer}>
                     <View style={styles.featureContent}>
                         <View>
@@ -58,7 +58,8 @@ const Features = () => {
 const styles = StyleSheet.create({
     container: {
         padding: 0,
-        marginBottom: 50
+        marginBottom: 50,
+        marginHorizontal: 20,
     },
     title: {
         fontSize: 24,
@@ -89,6 +90,8 @@ const styles = StyleSheet.create({
     },
     featureDescription: {
         fontSize: 16,
+        textAlign: 'center',
+        color: '#000'
     },
 });
 
